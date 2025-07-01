@@ -9,6 +9,7 @@ int main(){
     string fullName;
 
     cout << "Enter age ";
+    cin >> age;
 
     cin.ignore();
 

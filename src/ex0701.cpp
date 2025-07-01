@@ -17,6 +17,8 @@ class Color {
         stringstream sout;
         sout << "rgb(" << static_cast<int> (r * 255) << "," << static_cast<int>(g * 255)
             << "," << static_cast<int> (b * 255) << ")";
+
+        return sout.str();
     }
 
     string toHEX(){
@@ -32,10 +34,10 @@ class Color {
 
 int main() {
     Color c;
-    Color c1 (1.0, 0.25, 0.5);
+    Color c1 (1.0, 0.25, .5);
 
-    cout << c.toRGB() << " --- " << c.toRGB() << endl;
-    cout << c.toHEX() << " --- " << c.toHEX() << endl;
+    cout << c.toRGB() << " --- " << c.toHEX() << endl;
+    cout << c1.toRGB() << " --- " << c1.toHEX() << endl;
 
     return 0;
 }
